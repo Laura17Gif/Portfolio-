@@ -1,41 +1,260 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Laura Redmerski</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  background: #F1E2C5; /* Bege claro */
+  color: #333;
+  line-height: 1.6;
+}
+
+    header {
+      background: linear-gradient(120deg, #D97F8B, #FFC2BE);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #FFF0F5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ADB680;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #D97F8B;
+      border-bottom: 2px solid #FFC2BE;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #D97F8B;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #ADB680;
+    }
+
+    .galeria-projetos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .galeria-projetos figure {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      background: #fff;
+    }
+
+    .galeria-projetos img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .galeria-projetos figcaption {
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #444;
+    }
+footer {
+  background: #EAC75E; /* Amarelo pastel */
+  color: #333;
+  text-align: center;
+  padding: 30px 20px;
+}
+  </style>
 </head>
 <body>
-    <h1> título 1 - o mais importante</h1>
-    <h2> título 2 - o segundo amis importante</h2>
-    <h3> título 3 - o terceiro mais importante</h3>
-    <h4> título 4 - o quarto mais importante</h4>
-    <h5> título 5 - o sexto mais importante</h5>
-    <h6> título 6 - o sexto mais importante</h6>
+  <header data-aos="fade-down">
+    <h1>Laura Redmerski</h1>
+    <p>Estudante de Ciência de Dados | Futura Engenheira Química</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#sites">Sites</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <p> Este é um parágrafo de exemplo para o portifólio
-        <br> 
-        <br> 
-        <B>HABILIDADES</B> <I>EXPERIÊNCIAS </I> SUAS HABILIDADES , EXPERIÊNCIAS E PROJETOS.
+  <main>
+    <section id="sobre" data-aos="fade-up">
+      <h2>Sobre Mim</h2>
+      <div class="card">
+        <p>Sou Laura Redmerski, estudante do Ensino Médio Técnico em Ciência de Dados no CEDUP Perfeito Manoel de Aguiar. Busco uma oportunidade de estágio em Engenharia Química, área pela qual sou apaixonada. Tenho facilidade com lógica, comunicação e trabalho em equipe. Atualmente, faço estágio na secretaria da E.M.E.F e P.E Professora Alice Olinger Dias, onde desenvolvo habilidades interpessoais, de organização e atendimento ao público. Além da base técnica, valorizo o aprendizado constante e a ética no uso de dados.</p>
+        <a href="Currículo simples moderno sem foto cinza e rosa (1).pdf" download class="btn">📄 Baixar Currículo</a>
+      </div>
+    </section>
+
+    <section id="formacao" data-aos="fade-left">
+      <h2>Formação Acadêmica</h2>
+      <div class="card">
+        <p><strong>CEDUP Perfeito Manoel de Aguiar</strong> – Ensino Médio com técnico em Ciência de Dados (Cursando)</p>
+      </div>
+    </section>
+
+    <section id="habilidades" data-aos="fade-right">
+      <h2>Habilidades</h2>
+      <div class="card">
+        <ul>
+          <li>Raciocínio Analítico</li>
+          <li>Resolução de Desafios com Dados</li>
+          <li>Comunicação e Trabalho em Equipe</li>
+          <li>Python (Pandas, NumPy, Scikit-learn), SQL, R</li>
+          <li>Manipulação de Dados e Estatística</li>
+          <li>Machine Learning</li>
+          <li>Inglês – Básico</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" data-aos="zoom-in">
+      <h2>Projeto: Tá na Medida</h2>
+      <div class="card">
+        <p>O projeto “Tá na Medida” foi desenvolvido por alunos do CEDUP Perfeito Manoel de Aguiar com o objetivo de reduzir o desperdício de alimentos em escolas públicas e promover sustentabilidade por meio da tecnologia e do contato com a natureza.
+
+
+A iniciativa combina ações práticas, como a criação de uma horta escolar e a instalação de composteiras, com a inovação tecnológica: um aplicativo próprio que auxilia profissionais da cozinha no preparo das refeições. O app fornece cardápios digitais, controle de estoque, receitas, validade de alimentos e funcionalidades para reduzir o descarte.
+
+
+Além disso, o projeto inclui uma lixeira com inteligência artificial, capaz de identificar os alimentos mais desperdiçados e gerar relatórios. Com esses dados, é possível ajustar os cardápios e melhorar a aceitação das refeições.
+
+
+A horta escolar não apenas contribui com insumos naturais para a merenda, como também conscientiza os alunos sobre alimentação saudável e preservação ambiental. Já os resíduos orgânicos são reaproveitados através da compostagem, fechando o ciclo sustentável dentro da escola.
+
+
+Por sua relevância social, tecnológica e ambiental, o projeto foi vencedor do 1º lugar na 4ª Feira de Ciências do CEDUP, sendo classificado para representar a instituição na etapa regional.
+</p>
+        <a href="Projeto TNM Completo.docx.pdf" target="_blank" class="btn">🔗 Ver Projeto Completo</a>
+      </div>
+      <div class="galeria-projetos">
+    <figure>
+      <img src="horta-feira1.jpg.png" alt="Início da horta no CEDUP" />
+      <figcaption>Os integrantes da equipe iniciam o plantio da horta no CEDUP, preparando os canteiros e semeando alface, beterraba, cenoura, entre outras hortaliças.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="horta-feira2.jpg.png" alt="Plantio das hortaliças" />
+      <figcaption>Fase de plantio: alunos cultivam alface, sansinha, cana-de-cheiro, alfavaca, beterraba e outras hortaliças.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Dashboard Tá na medida!.jpg.png" alt="Dashboard de monitoramento" />
+      <figcaption>Dashboard interativo com gráficos comparativos do desperdício antes e depois da implantação da horta.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="feira-interna.jpg.png" alt="Equipe premiada na Feira de Ciências" />
+      <figcaption>Equipe do “Tá na Medida” recebendo o troféu de 1º lugar na 4ª Feira de Ciências do CEDUP, com classificação para a etapa regional.</figcaption>
+    </figure>
+  </div>
+</section>>
+
+    <section id="sites" data-aos="fade-up-right">
+      <h2>Sites Desenvolvidos</h2>
+      <div class="card">
+        <p> Durante minha formação técnica, desenvolvi projetos digitais com foco educativo, combinando design acessível e conteúdo relevante. A seguir, apresento dois sites que abordam temas atuais e importantes no mundo da tecnologia: o Manifesto Ágil e os Deepfakes.</p>
+        <p><strong>Ágil Manifesto:</strong> Este site foi criado com o objetivo de apresentar, de forma clara e acessível, os princípios e valores do Manifesto Ágil — uma base fundamental para o desenvolvimento de software moderno. O projeto inclui uma explicação detalhada dos 4 valores e 12 princípios do Ágil, além de exemplos de aplicação em equipes reais.
+           <a href="https://sites.google.com/estudante.sed.sc.gov.br/agilmanifesto/in%C3%ADcio" target="_blank">🔗 Acessar</a></p>
+        <p><strong>Deepfake ao Vivo:</strong> Plataforma de conscientização sobre os riscos e aplicações das tecnologias de deepfake em tempo real. O site foi desenvolvido com foco educativo, trazendo conteúdos sobre inteligência artificial, manipulação de vídeo, ética digital e os impactos dessa tecnologia na sociedade. 
+          <a href="https://sites.google.com/estudante.sed.sc.gov.br/deepfake-vivo/in%C3%ADcio" target="_blank">🔗 Acessar</a></p>
+          <p><strong> Tá na medida </strong>O site do projeto “Tá na Medida” apresenta de forma clara e interativa as ações realizadas para combater o desperdício de alimentos nas escolas. A plataforma reúne informações sobre a horta escolar, compostagem, aplicativo inteligente e dados gerados pela lixeira com IA. É uma vitrine do impacto social, ambiental e tecnológico do projeto. 
+          <a href="https://sites.google.com/estudante.sed.sc.gov.br/tanamedida/in%C3%ADcio" target="_blank">🔗 Acessar</a></p>
+      </div>
+    </section>
+
+    <section id="certificados" data-aos="zoom-in-up">
+      <h2>Certificados</h2>
+      <div class="card">
+        <ul>
+          <li><a href="certificados/analise-de-dados.pdf" target="_blank">Introdução à Análise de Dados – Power BI</a></li>
+          <li><a href="certificados/visualizacao-powerbi.pdf" target="_blank">Visualização de Dados no Power BI</a></li>
+          <li><a href="certificados/implementacao-banco.pdf" target="_blank">Implementação de Banco de Dados</a></li>
+          <li><a href="certificados/excel-na-pratica.pdf" target="_blank">Excel na Prática</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" data-aos="fade-up">
+      <h2>Contato</h2>
+      <div class="card">
+        <p><strong>Email:</strong> laurarski11@gmail.com.br</p>
+        <p><strong>WhatsApp:</strong> (47) 98483-9378</p>
+        <p><strong>Endereço:</strong> Rua Vicente Bernardes, Guaramirim, SC</p>
+        <p>
+          <a href="https://github.com/Laura17Gif/Portfolio-.git" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/SEULINKAQUI" target="_blank">LinkedIn</a>
         </p>
-        <strong> texto importante </strong>
-        <br>
-        <em> texto enfatizado </em>
-        <br>
-        <mark> texto amarelinho </mark>
-        <br>
-        <small>texto pequeno</small>
-        <br> 
-        <del> texto riscado </del>
-        <br>
-        <ins> texto inserido </ins>
-        <br> 
-        teste<sub> texto subescrito</sub>
-        <br>
-        teste<sup> textosobreescrito</sup>
+      </div>
+    </section>
+  </main>
 
-        <h2> diferença entre negrito (b) e strong</h2>
-        o elemento <b> é usado para destacar texto indicar importância , enquanto o  </b>
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 Laura Redmerski. Todos os direitos reservados.</p>
+  </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
+
